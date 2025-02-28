@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riv Fashions - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background-color: black;
+        }
+
+        /* Fixed Banner (Centered) */
+        .scroll-banner {
+            width: 100%;
+            background: white;
+            color: black;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Subscribe Button on Banner */
+        .subscribe-button {
+            background: black;
+            color: white;
+            padding: 8px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: 0.3s;
+            margin-left: 5px
+        }
+
+        .subscribe-button:hover {
+            background: #1EBE5B;
+        }
+
+        /* Main Content */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 80px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            width: 70px;
+            text-align: center;
+        }
+
+        .countdown-box span {
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .countdown-box small {
+            font-size: 14px;
+            color: white;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 30px;
+            margin: 0 10px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+
+        /* WhatsApp Subscribe Button */
+        .whatsapp-button {
+            background: #25D366;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background: #1EBE5B;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 1);
+        }
+
+        /* Call Now Button */
+        .call-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff5722;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+            transition: 0.3s;
+        }
+
+        .call-button:hover {
+            background: #e64a19;
+            box-shadow: 0 0 20px rgba(255, 87, 34, 1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Centered Banner -->
+    <div class="scroll-banner">
+        <a href="https://forms.gle/qDJx3YKHV6x2ZRoi6" class="subscribe-button" target="_blank">📩 Subscribe</a>
+        <span>✨ Subscribe Now & Unlock an Exclusive 10% Launch Discount! ✨</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Riv Fashions</h1>
+        <p>Luxury Fashion Coming Soon</p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-container">
+            <div class="countdown-box"><span id="days">00</span><small>Days</small></div>
+            <div class="countdown-box"><span id="hours">00</span><small>Hours</small></div>
+            <div class="countdown-box"><span id="minutes">00</span><small>Minutes</small></div>
+            <div class="countdown-box"><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/mumtajalamhayat1?igsh=OGVlMXRuZ3UydXhw"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1ahcnBACmB/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/mumtaj-alam-597510254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/mumtajhayat?t=0eiHCodAHSBbG5SUYkVF0A&s=09"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- WhatsApp Subscribe Button -->
+        <a href="https://wa.me/917011976551?text=I%20want%20to%20subscribe%20for%20Riv%20Fashions%20launch%20discount!" class="whatsapp-button" target="_blank">📩 Subscribe via WhatsApp</a>
+    </div>
+
+<!-- Call Now Button (Now Opens Google Form) -->
+<a href="https://forms.gle/qDJx3YKHV6x2ZRoi6" class="call-button" target="_blank"> Contact Now</a>>
+
+    <!-- JavaScript for Countdown Timer -->
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date("March 30, 2025 00:00:00").getTime();
+            setInterval(function() {
+                const now = new Date().getTime();
+                const diff = targetDate - now;
+
+                document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+                document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
+            }, 1000);
+        }
+        updateCountdown();
+    </script>
+
+</body>
+</html>
